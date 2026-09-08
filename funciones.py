@@ -65,7 +65,7 @@ def pedir_horas(hora_inicio_actual=None, hora_fin_actual=None):
 
     if inicio not in FRANJAS or FRANJAS[inicio] != fin:
         print("Franja no válida. Use bloques de dos horas: 08:00-10:00, "
-              "10:00-12:00, 12:00-14:00 o 14:00-16:00.")
+            "10:00-12:00, 12:00-14:00 o 14:00-16:00.")
         return None
     return inicio, fin
 
@@ -162,7 +162,7 @@ def modificar_evento(horario):
 
     print("\nActividad encontrada:")
     print(f"{evento['materia']} | {evento['dia']} | "
-          f"{evento['hora_inicio']}-{evento['hora_fin']} | {evento['ubicacion']}")
+        f"{evento['hora_inicio']}-{evento['hora_fin']} | {evento['ubicacion']}")
     print("Presiona ENTER en un campo para conservar su valor actual.")
 
     nuevo_nombre = input(f"Nuevo nombre [ENTER conserva {evento['materia']}]: ").strip()
@@ -245,3 +245,5 @@ def generar_reporte(horario):
         input("Presione ENTER para continuar...")
 
     print("Reporte guardado en reporte_horario.json.")
+
+#No me rendiré, seguiré practicando hasta ser la mejor programadora del mundo.
