@@ -1,0 +1,121 @@
+[
+    {
+        "materia": "Matemáticas",
+        "dia": "Lunes",
+        "hora_inicio": "08:00",
+        "hora_fin": "10:00",
+        "ubicacion": "Aula 101"
+    },
+    {
+        "materia": "Inglés",
+        "dia": "Lunes",
+        "hora_inicio": "10:00",
+        "hora_fin": "12:00",
+        "ubicacion": "Aula 201"
+    },
+    {
+        "materia": "Almuerzo",
+        "dia": "Lunes",
+        "hora_inicio": "12:00",
+        "hora_fin": "14:00",
+        "ubicacion": "Cafetería"
+    },
+    {
+        "materia": "Programación",
+        "dia": "Lunes",
+        "hora_inicio": "14:00",
+        "hora_fin": "16:00",
+        "ubicacion": "Laboratorio 3"
+    },
+    {
+        "materia": "Física",
+        "dia": "Martes",
+        "hora_inicio": "08:00",
+        "hora_fin": "10:00",
+        "ubicacion": "Aula 202"
+    },
+    {
+        "materia": "Almuerzo",
+        "dia": "Martes",
+        "hora_inicio": "12:00",
+        "hora_fin": "14:00",
+        "ubicacion": "Cafetería"
+    },
+    {
+        "materia": "Historia",
+        "dia": "Martes",
+        "hora_inicio": "14:00",
+        "hora_fin": "16:00",
+        "ubicacion": "Aula 105"
+    },
+    {
+        "materia": "Matemáticas",
+        "dia": "Miércoles",
+        "hora_inicio": "08:00",
+        "hora_fin": "10:00",
+        "ubicacion": "Aula 101"
+    },
+    {
+        "materia": "Física",
+        "dia": "Miércoles",
+        "hora_inicio": "10:00",
+        "hora_fin": "12:00",
+        "ubicacion": "Aula 202"
+    },
+    {
+        "materia": "Almuerzo",
+        "dia": "Miércoles",
+        "hora_inicio": "12:00",
+        "hora_fin": "14:00",
+        "ubicacion": "Cafetería"
+    },
+    {
+        "materia": "Inglés",
+        "dia": "Miércoles",
+        "hora_inicio": "14:00",
+        "hora_fin": "16:00",
+        "ubicacion": "Aula 201"
+    },
+    {
+        "materia": "Química",
+        "dia": "Jueves",
+        "hora_inicio": "08:00",
+        "hora_fin": "10:00",
+        "ubicacion": "Laboratorio 1"
+    },
+    {
+        "materia": "Deportes",
+        "dia": "Jueves",
+        "hora_inicio": "10:00",
+        "hora_fin": "12:00",
+        "ubicacion": "Cancha principal"
+    },
+    {
+        "materia": "Almuerzo",
+        "dia": "Jueves",
+        "hora_inicio": "12:00",
+        "hora_fin": "14:00",
+        "ubicacion": "Cafetería"
+    },
+    {
+        "materia": "Historia",
+        "dia": "Viernes",
+        "hora_inicio": "08:00",
+        "hora_fin": "10:00",
+        "ubicacion": "Aula 105"
+    },
+    {
+        "materia": "Programación",
+        "dia": "Viernes",
+        "hora_inicio": "10:00",
+        "hora_fin": "12:00",
+        "ubicacion": "Laboratorio 3"
+    },
+    {
+        "materia": "Almuerzo",
+        "dia": "Viernes",
+        "hora_inicio": "12:00",
+        "hora_fin": "14:00",
+        "ubicacion": "Cafetería"
+    }
+]

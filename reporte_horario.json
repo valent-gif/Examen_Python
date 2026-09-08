@@ -1,0 +1,129 @@
+[
+    {
+        "dia": "Lunes",
+        "eventos": [
+            {
+                "materia": "Matemáticas",
+                "hora_inicio": "08:00",
+                "hora_fin": "10:00",
+                "ubicacion": "Aula 101"
+            },
+            {
+                "materia": "Inglés",
+                "hora_inicio": "10:00",
+                "hora_fin": "12:00",
+                "ubicacion": "Aula 201"
+            },
+            {
+                "materia": "Almuerzo",
+                "hora_inicio": "12:00",
+                "hora_fin": "14:00",
+                "ubicacion": "Cafetería"
+            },
+            {
+                "materia": "Programación",
+                "hora_inicio": "14:00",
+                "hora_fin": "16:00",
+                "ubicacion": "Laboratorio 3"
+            }
+        ]
+    },
+    {
+        "dia": "Martes",
+        "eventos": [
+            {
+                "materia": "Física",
+                "hora_inicio": "08:00",
+                "hora_fin": "10:00",
+                "ubicacion": "Aula 202"
+            },
+            {
+                "materia": "Almuerzo",
+                "hora_inicio": "12:00",
+                "hora_fin": "14:00",
+                "ubicacion": "Cafetería"
+            },
+            {
+                "materia": "Historia",
+                "hora_inicio": "14:00",
+                "hora_fin": "16:00",
+                "ubicacion": "Aula 105"
+            }
+        ]
+    },
+    {
+        "dia": "Miércoles",
+        "eventos": [
+            {
+                "materia": "Matemáticas",
+                "hora_inicio": "08:00",
+                "hora_fin": "10:00",
+                "ubicacion": "Aula 101"
+            },
+            {
+                "materia": "Física",
+                "hora_inicio": "10:00",
+                "hora_fin": "12:00",
+                "ubicacion": "Aula 202"
+            },
+            {
+                "materia": "Almuerzo",
+                "hora_inicio": "12:00",
+                "hora_fin": "14:00",
+                "ubicacion": "Cafetería"
+            },
+            {
+                "materia": "Inglés",
+                "hora_inicio": "14:00",
+                "hora_fin": "16:00",
+                "ubicacion": "Aula 201"
+            }
+        ]
+    },
+    {
+        "dia": "Jueves",
+        "eventos": [
+            {
+                "materia": "Química",
+                "hora_inicio": "08:00",
+                "hora_fin": "10:00",
+                "ubicacion": "Laboratorio 1"
+            },
+            {
+                "materia": "Deportes",
+                "hora_inicio": "10:00",
+                "hora_fin": "12:00",
+                "ubicacion": "Cancha principal"
+            },
+            {
+                "materia": "Almuerzo",
+                "hora_inicio": "12:00",
+                "hora_fin": "14:00",
+                "ubicacion": "Cafetería"
+            }
+        ]
+    },
+    {
+        "dia": "Viernes",
+        "eventos": [
+            {
+                "materia": "Historia",
+                "hora_inicio": "08:00",
+                "hora_fin": "10:00",
+                "ubicacion": "Aula 105"
+            },
+            {
+                "materia": "Programación",
+                "hora_inicio": "10:00",
+                "hora_fin": "12:00",
+                "ubicacion": "Laboratorio 3"
+            },
+            {
+                "materia": "Almuerzo",
+                "hora_inicio": "12:00",
+                "hora_fin": "14:00",
+                "ubicacion": "Cafetería"
+            }
+        ]
+    }
+]
