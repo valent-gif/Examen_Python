@@ -247,3 +247,132 @@ def generar_reporte(horario):
     print("Reporte guardado en reporte_horario.json.")
 
 #No me rendiré, seguiré practicando hasta ser la mejor programadora del mundo.
+
+
+    #Funcion adicional.
+    #Funcinalidad de filtrado por ubicacion, mostrar que materia se ven en esa aula.
+    
+def filtrar_por_ubicacion(horario):
+#Pedir el dato y guardarlo een la variable ubicacion
+    print("\n---FILTRAR POR UBICACION---")
+    ubicacion = (input("Ingrese el nombre del aula de clase")).strip()
+#Valildar if y return si la variable esta vacia
+    if ubicacion == "":
+        print("La ubicacion no puede estar vacia")
+        return
+    encontrado = False
+
+    for evento in horario:
+        if normalizar_texto(evento["ubicacion"]) == normalizar_texto(ubicacion_buscada):
+            if not encontrado:
+                print(f"\n-Actividades encontradas encontradas en '{ubicacion_buscada}":)
+                encontrado = True
+            print(
+                f"- {evento['materia']} | {evento['dia']} "
+                f"({evento['hora_inicio']}-{evento['hora_fin']}) | "
+                f"Ubicación: {evento['ubicacion']}"
+            )
+    if not encontrado:
+        print(f"No se encontraron actividades registradas en '{ubicacion_buscada}'.")
+
+#Funcionalidad por dia
+#Mostrar solo la informacion de un dia de la semana(el seleccionado)
+
+
+def filtrar_dia_especifico(horario):
+    print("\n---FILTRAR POR DIA---")
+#Pedir dia() preegunta al usuario y lo guarda
+    dia_buscado = pedir_dia()
+
+#Si el día fue inválido o estuvo vacío, pedir_dia() devuelve None
+    if dia_buscado is None:
+        return
+    encontrado = False
+
+#recorre los eventos del horario
+    for evento in horario:
+        if normalizar_texto(evento["dia"]) == nomalizar_texto(dia_buscado):
+            if not encontrado:
+                print(f"\n-Actividades encontradas encontradas en '{dia_buscada}":)
+                encontrado = True
+            print(
+                f"- {evento['materia']} | "
+                f"({evento['hora_inicio']}-{evento['hora_fin']}) | "
+                f"Ubicación: {evento['ubicacion']}"
+            )
+    if not encontrado:
+        print(f"No se encontraron actividades registradas en el  '{dia_buscada}'.")
+
+#Funcionalidada adicional
+def filtrar_por_franja(horario):
+    """Muestra todas las materias programadas en una franja horaria específica a lo largo de la semana."""
+    print("\n--- FILTRAR POR FRANJA HORARIA ---")
+    horas = pedir_horas()
+    if horas is None:
+        return
+
+    hora_inicio, hora_fin = horas
+    encontrado = False
+
+    for evento in horario:
+        if evento["hora_inicio"] == hora_inicio:
+            if not encontrado:
+                print(f"\nActividades programadas en la franja {hora_inicio}-{hora_fin}:")
+                encontrado = True
+            print(f"- {evento['dia']}: {evento['materia']} en {evento['ubicacion']}")
+
+    if not encontrado:
+        print(f"No tienes ninguna actividad programada en la franja {hora_inicio}-{hora_fin}.")
+
+#Filttrar por materia 
+
+def filtrar_por_materia(horario):
+    """Busca todas las sesiones programadas para una materia o palabra clave."""
+    print("\n--- FILTRAR POR MATERIA O PALABRA CLAVE ---")
+    busqueda = input("Ingrese la materia o palabra clave a buscar: ").strip()
+
+    if busqueda == "":
+        print("El término de búsqueda no puede estar vacío.")
+        return
+
+    busqueda_normalizada = normalizar_texto(busqueda)
+    encontrado = False
+
+    for evento in horario:
+        materia_normalizada = normalizar_texto(evento["materia"])
+        if busqueda_normalizada in materia_normalizada:
+            if not encontrado:
+                print(f"\nSesiones encontradas para '{busqueda}':")
+                encontrado = True
+            print(
+                f"- {evento['materia']} | {evento['dia']} "
+                f"({evento['hora_inicio']}-{evento['hora_fin']}) | "
+                f"Ubicación: {evento['ubicacion']}"
+            )
+
+    if not encontrado:
+        print(f"No se encontraron actividades relacionadas con '{busqueda}'.")
+
+#Funciones obtener horraio libre
+
+def obtener_horarios_libres(horario):
+    """Genera un listado de los bloques de tiempo en los que no hay actividades registradas."""
+    print("\n--- HORARIOS LIBRES DE LA SEMANA ---")
+    hay_libres = False
+
+    for dia in DIAS:
+        libres_del_dia = []
+        for inicio, fin in FRANJAS.items():
+            if not existe_choque(horario, dia, inicio):
+                libres_del_dia.append(f"{inicio}-{fin}")
+
+        if libres_del_dia:
+            hay_libres = True
+            print(f"\n{dia}:")
+            for franja in libres_del_dia:
+                print(f"  - Libre: {franja}")
+
+    if not hay_libres:
+        print("No tienes bloques libres registrados en la semana.")        
+
+
